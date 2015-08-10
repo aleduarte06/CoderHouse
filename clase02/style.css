@@ -1,0 +1,189 @@
+body{
+    margin: 0;
+    font-size: 14px;
+    font-family: "Helvetica";
+}
+figure{
+    margin: 0;
+}
+article{
+    margin: 0;
+    padding: 0;
+}
+.mainheader{
+    height: 70px;
+    background-color: #c84742;
+}
+
+.mainheader .content{
+    width: 960px;
+    margin: 0 auto;
+    position: relative;
+}
+.mainheader .content .logo{
+    display: inline-block;
+    margin-top: 10px;
+}
+.mainheader .content .menu{
+    display: inline-block;
+    position: absolute;
+    top: 26px;
+    right: 20px;
+
+}
+.mainheader .content .menu .menulist{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.mainheader .content .menu .menulist .menuitem{
+    display: inline-block;
+    margin-right: 20px;
+}
+.mainheader .content .menu .menulist .menuitem .link{
+    text-decoration: none;
+    font-family: "Helvetica";
+    text-transform: uppercase;
+    color: white;
+    font-size: 14px;
+
+}
+.mainheader .content .menu .menulist .menuitem:first-child .link{
+    color: red;
+}
+.mainheader .content .menu .menulist .menuitem:last-child{
+    margin-right: 0;
+}
+
+.main{
+    width: 960px;
+    margin: 0 auto;
+    /*border: solid 2px blue;*/
+}
+.main .home{
+    /*border: solid 2px red;*/
+}
+.main .home .banner{
+    position: relative;
+    background-color: black;
+    height: 450px;
+    background-image: url("carouselItem4.jpg");
+    background-repeat: none;
+    background-size: cover;
+    -webkit-filter: grayscale(1);
+}
+
+.main .home .banner .list{
+    display: inline-block;
+    /*border: solid 1px orangered;*/
+    list-style: none;
+    margin-top: 150px;
+
+}
+.main .home .banner .list .listitem{
+    color: #fff;
+}
+.main .home .banner .navigation{
+    margin-top: 220px;
+    text-align: center;
+}
+.main .home .intro{
+    margin: 50px;
+    padding: 20px;
+}
+.main .home .intro .titulo{
+    font-size: 36px;
+    text-align: center;
+    font-family: "Helvetica";
+}
+.main .home .intro .parrafo{
+    color: #888;
+    font-family: sans-serif;
+}
+.main .about{
+    /*border: solid 1px violet;*/
+    background-color: #E4E4E4;
+    padding-top: 42px;
+}
+.main .about .titulo{
+    font-size: 30px;
+    text-align: center;
+    font-family: sans-serif;
+}
+.main .about .parrafo{
+    text-align: center;
+    color: #828282;
+    font-family: sans-serif;
+}
+.main .about .contenedor{
+    /*border: solid 1px darkred;*/
+    text-align: center;
+    padding-top: 42px;
+}
+.main .about .contenedor .item{
+    display: inline-block;
+    width: 260px;
+    /*border: solid 1px mediumvioletred;*/
+    margin-right: 20px;
+    margin-left: 20px;
+    background-color: #F0F0F0;
+}
+.main .about .contenedor .item .img{
+    width: 260px;
+
+}
+.main .about .contenedor .item .parrafo{
+    color: #828282;
+    /*border: solid 1px blue;*/
+    margin: 20px 20px 40px 20px;
+    padding: 0px;
+    text-align: center;
+}
+
+.main .about .banner{
+    /*border: solid 1px navy;*/
+    background-image: url("carouselItem4.jpg");
+    background-repeat: none;
+    background-size: cover;
+    background-position: bottom;
+    background-size: 180%;
+    -webkit-filter: grayscale(1);
+    height: 320px;
+    margin-top: 60px;
+}
+.main .about .banner .titulo {
+    font-size: 2.3em;
+    color: #F2F2F2;
+    margin-top:15%;
+}
+.main .about .banner span {
+    font-size: 0.8em;
+    color: #F2F2F2;
+    margin-top:15%;
+}
+
+.main .skills{
+    color: #333333;
+    text-align: center;
+}
+.main .skills .titulo{
+    margin-top: 60px;
+    font-size: 1.4em;
+}
+.main .skills .parrafo{
+    color: #cecece;
+}
+.main .skills .container{
+    display: block;
+    text-align: center;
+    border: solid 2px orangered;
+}
+
+.main .skills .container .articulo{
+    display: inline-table;
+    border: solid 1px red;
+    width: 430px;
+    height: 300px;
+    text-align: justify;
+
+}
