@@ -1,7 +1,7 @@
  /**
  * Created by aleduarte06 on 22/08/15.
  */
-var mod = angular.module('myapp',['ui.router']);
+var mod = angular.module('myapp',['ui.router']); //Creamos un modulo de angular
 mod.config(function($stateProvider, $urlRouterProvider){
 
  $stateProvider
@@ -40,8 +40,23 @@ mod.controller('primerCtrl', function($scope,$state){
     }
 });
 
- mod.controller('segundoCtrl', function($scope){
+ mod.controller('segundoCtrl', function($scope,$http){
      console.log('Segungo controlador');
+     $scope.busqueda = ''
+     //$http.get('https://api.mercadolibre.com/sites/MLA/search?q=ipod%20nano')
+     //    .then(function(resultado){
+     //       console.log(resultado)
+     //    });
+     $scope.buscar = function(){
+         var url = 'https://api.mercadolibre.com/sites/MLA/search?q='+ $scope.busqueda + '&limit=10'
+         console.log(url);
+         $http.get(url).then(function(res){
+             console.log(res);
+             $scope.resultados = res.data.results;
+         })
+     };
+
+
      $scope.items = [{
          id:'1',
          nombre:'Ale',

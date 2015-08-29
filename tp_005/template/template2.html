@@ -1,5 +1,10 @@
 <h2>Template2</h2>
 <div class="container-fluid">
+    <div>
+        <label for="buscar">Buscar</label>
+        <input type="text" class="form-control" ng-model="busqueda"/>
+        <button class="btn btn-primary" ng-click="buscar()">Buscar</button>
+    </div>
     <table class="table">
         <thead>
             <tr>
@@ -9,11 +14,11 @@
                 <th>Email</th>
             </tr>
         </thead>
-        <tr ng-repeat="item in items">
-            <td>{{item.id}}</td>
-            <td>{{item.nombre}}</td>
-            <td>{{item.apellido}}</td>
-            <td>{{item.email}}</td>
+        <tr ng-repeat="item in resultados">
+            <td><img src="{{item.thumbnail}}" alt=""/></td>
+            <td>{{item.title}}</td>
+            <td>{{item.price}}</td>
+            <td><a href="{{item.permalink}}">link</a></td>
         </tr>
     </table>
 </div>

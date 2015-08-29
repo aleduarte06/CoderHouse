@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>intro angular-js</title>
+    <script src="js/angular.js"></script>
+    <script src="js/angular-ui-router.js"></script>
+    <script src="js/app.js"></script>
+
+</head>
+<body ng-app="myapp">
+    <ul>
+        <li><a ui-sref="main"> ir al main</a></li>
+        <li><a ui-sref="uno"> ir al uno</a></li>
+        <li><a ui-sref="dos"> ir al dos</a></li>
+        <li><a ui-sref="tres"> ir al tres</a></li>
+    </ul>
+    <div>
+        <hr/>
+        <input type="text" ng-model="first.greeting"/>
+        <div class="first.greeting">
+            {{first.greeting}} {{"world"}}
+
+        </div>
+    </div>
+    <div ui-view>
+
+    </div>
+</body>
+</html>
