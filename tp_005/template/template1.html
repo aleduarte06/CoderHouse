@@ -1,0 +1,41 @@
+<h2>Formulario</h2>
+<br/>
+<form>
+    <div class="form-group-sm">
+        <fieldset>
+            <label for="nombre"> Nombre:</label>
+            <input class="form-control" type="text" placeholder="" ng-model="nombre" value="{{inputNombre}}"/>
+            <label for="apellido">Apellido:</label>
+            <input class="form-control" type="text" placeholder="" ng-model="apellido" value="{{inputApellido}}"/>
+            <label for="sexo">Sexo:</label>
+            <select class="form-control" name="select_sexo" id="sexo" ng-model="sexo">
+                <option value="F">Femenino</option>
+                <option value="M">Masculino</option>
+            </select>
+        </fieldset>
+        <fieldset class="form-group-sm">
+            <label for="email">Email:</label>
+            <input class="form-control" type="text" ng-model="email"/>
+            <label for="unafrase">Tu Frase</label>
+            <input class="form-control" type="text" ng-model="tuFrase"/>
+        </fieldset>
+        <fieldset class="form-group-sm">
+            <button class="form-control btn btn-primary" ng-click="enviarForm()">Enviar</button>
+        </fieldset>
+        <hr/>
+        <p>Ir a la seccion 2</p>
+        <fieldset class="form-group-sm">
+            <button class="form-control btn btn-danger" ng-click="goSeccion2()">Enviar</button>
+        </fieldset>
+    </div>
+</form>
+<hr/>
+<div class="panel panel-default">
+    <div>Tu Nombre: {{nombre}} - Tu Apellido: {{apellido}} - Tu Sexo: {{sexo}}
+    <br/>
+    Tu Email: {{email}} - Tu Fase: {{tuFrase}}
+    </div>
+    <div>
+        {{datos}}
+    </div>
+</div>
