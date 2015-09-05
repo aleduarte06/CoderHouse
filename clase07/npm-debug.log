@@ -1,0 +1,215 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'update' ]
+2 info using npm@2.11.3
+3 info using node@v0.12.7
+4 verbose config Skipping project config: /Users/aleduarte06/.npmrc. (matches userconfig)
+5 silly mapToRegistry name lodash
+6 silly mapToRegistry using default registry
+7 silly mapToRegistry registry https://registry.npmjs.org/
+8 silly mapToRegistry uri https://registry.npmjs.org/lodash
+9 silly mapToRegistry name bower
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry uri https://registry.npmjs.org/bower
+13 verbose request uri https://registry.npmjs.org/bower
+14 verbose request no auth needed
+15 info attempt registry request try #1 at 2:48:36 PM
+16 verbose request id a837fcb5e89f2c79
+17 http request GET https://registry.npmjs.org/bower
+18 verbose request uri https://registry.npmjs.org/lodash
+19 verbose request no auth needed
+20 info attempt registry request try #1 at 2:48:36 PM
+21 verbose etag "5ETTD4IJQ2AUL4PEGDJPWDQ2L"
+22 http request GET https://registry.npmjs.org/lodash
+23 http 304 https://registry.npmjs.org/lodash
+24 silly get cb [ 304,
+24 silly get   { date: 'Sat, 05 Sep 2015 17:48:36 GMT',
+24 silly get     via: '1.1 varnish',
+24 silly get     'cache-control': 'max-age=60',
+24 silly get     etag: '"5ETTD4IJQ2AUL4PEGDJPWDQ2L"',
+24 silly get     age: '29',
+24 silly get     connection: 'keep-alive',
+24 silly get     'x-served-by': 'cache-atl6234-ATL',
+24 silly get     'x-cache': 'HIT',
+24 silly get     'x-cache-hits': '1',
+24 silly get     'x-timer': 'S1441475316.685118,VS0,VE1',
+24 silly get     vary: 'Accept' } ]
+25 verbose etag https://registry.npmjs.org/lodash from cache
+26 verbose get saving lodash to /Users/aleduarte06/.npm/registry.npmjs.org/lodash/.cache.json
+27 http 200 https://registry.npmjs.org/bower
+28 silly get cb [ 200,
+28 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+28 silly get     etag: '"QHY14LZIRMFVU4UEM564WC5M"',
+28 silly get     'content-type': 'application/json',
+28 silly get     'cache-control': 'max-age=60',
+28 silly get     'content-length': '120153',
+28 silly get     'accept-ranges': 'bytes',
+28 silly get     date: 'Sat, 05 Sep 2015 17:48:36 GMT',
+28 silly get     via: '1.1 varnish',
+28 silly get     age: '30',
+28 silly get     connection: 'keep-alive',
+28 silly get     'x-served-by': 'cache-atl6234-ATL',
+28 silly get     'x-cache': 'HIT',
+28 silly get     'x-cache-hits': '1',
+28 silly get     'x-timer': 'S1441475316.840235,VS0,VE1',
+28 silly get     vary: 'Accept' } ]
+29 verbose get saving bower to /Users/aleduarte06/.npm/registry.npmjs.org/bower/.cache.json
+30 info outdated updating [ [ '/Users/aleduarte06',
+30 info outdated     'bower',
+30 info outdated     '1.4.1',
+30 info outdated     '1.5.2',
+30 info outdated     '1.5.2',
+30 info outdated     'latest' ] ]
+31 verbose install where, what [ '/Users/aleduarte06', [ 'bower@1.5.2' ] ]
+32 verbose install initial load of /Users/aleduarte06/package.json
+33 verbose installManyTop reading scoped package data from /Users/aleduarte06/node_modules/bower/package.json
+34 verbose installManyTop reading scoped package data from /Users/aleduarte06/node_modules/lodash/package.json
+35 verbose readDependencies loading dependencies from /Users/aleduarte06/package.json
+36 silly cache add args [ 'bower@1.5.2', null ]
+37 verbose cache add spec bower@1.5.2
+38 silly cache add parsed spec { raw: 'bower@1.5.2',
+38 silly cache add   scope: null,
+38 silly cache add   name: 'bower',
+38 silly cache add   rawSpec: '1.5.2',
+38 silly cache add   spec: '1.5.2',
+38 silly cache add   type: 'version' }
+39 silly addNamed bower@1.5.2
+40 verbose addNamed "1.5.2" is a plain semver version for bower
+41 silly mapToRegistry name bower
+42 silly mapToRegistry using default registry
+43 silly mapToRegistry registry https://registry.npmjs.org/
+44 silly mapToRegistry uri https://registry.npmjs.org/bower
+45 verbose addNameVersion registry:https://registry.npmjs.org/bower not in flight; fetching
+46 verbose get https://registry.npmjs.org/bower not expired, no request
+47 silly mapToRegistry name bower
+48 silly mapToRegistry using default registry
+49 silly mapToRegistry registry https://registry.npmjs.org/
+50 silly mapToRegistry uri https://registry.npmjs.org/bower
+51 verbose addRemoteTarball https://registry.npmjs.org/bower/-/bower-1.5.2.tgz not in flight; adding
+52 verbose addRemoteTarball [ 'https://registry.npmjs.org/bower/-/bower-1.5.2.tgz',
+52 verbose addRemoteTarball   'be291d6c36f1740779abff1c61aca5633e265327' ]
+53 info retry fetch attempt 1 at 2:48:37 PM
+54 info attempt registry request try #1 at 2:48:37 PM
+55 http fetch GET https://registry.npmjs.org/bower/-/bower-1.5.2.tgz
+56 http fetch 200 https://registry.npmjs.org/bower/-/bower-1.5.2.tgz
+57 silly fetchAndShaCheck shasum be291d6c36f1740779abff1c61aca5633e265327
+58 verbose addTmpTarball /var/folders/3d/hsx3wxqx67156b8sql9nry8r0000gn/T/npm-2733-bbcdc685/registry.npmjs.org/bower/-/bower-1.5.2.tgz not in flight; adding
+59 verbose addTmpTarball already have metadata; skipping unpack for bower@1.5.2
+60 silly cache afterAdd bower@1.5.2
+61 verbose afterAdd /Users/aleduarte06/.npm/bower/1.5.2/package/package.json not in flight; writing
+62 verbose afterAdd /Users/aleduarte06/.npm/bower/1.5.2/package/package.json written
+63 silly install resolved [ { name: 'bower',
+63 silly install resolved     version: '1.5.2',
+63 silly install resolved     description: 'The browser package manager',
+63 silly install resolved     author: { name: 'Twitter' },
+63 silly install resolved     license: 'MIT',
+63 silly install resolved     repository: { type: 'git', url: 'git+https://github.com/bower/bower.git' },
+63 silly install resolved     main: 'lib',
+63 silly install resolved     homepage: 'http://bower.io',
+63 silly install resolved     engines: { node: '>=0.10.0' },
+63 silly install resolved     dependencies:
+63 silly install resolved      { abbrev: '^1.0.5',
+63 silly install resolved        archy: '1.0.0',
+63 silly install resolved        'bower-config': '^0.6.1',
+63 silly install resolved        'bower-endpoint-parser': '^0.2.2',
+63 silly install resolved        'bower-json': '^0.4.0',
+63 silly install resolved        'bower-logger': '^0.2.2',
+63 silly install resolved        'bower-registry-client': '^0.3.0',
+63 silly install resolved        cardinal: '0.4.4',
+63 silly install resolved        chalk: '^1.0.0',
+63 silly install resolved        chmodr: '0.1.0',
+63 silly install resolved        configstore: '^0.3.2',
+63 silly install resolved        'decompress-zip': '^0.1.0',
+63 silly install resolved        'deep-sort-object': '~0.1.1',
+63 silly install resolved        fstream: '^1.0.3',
+63 silly install resolved        'fstream-ignore': '^1.0.2',
+63 silly install resolved        github: '^0.2.3',
+63 silly install resolved        glob: '^4.3.2',
+63 silly install resolved        'graceful-fs': '^3.0.5',
+63 silly install resolved        handlebars: '^2.0.0',
+63 silly install resolved        inquirer: '0.8.0',
+63 silly install resolved        insight: '^0.5.0',
+63 silly install resolved        'is-root': '^1.0.0',
+63 silly install resolved        junk: '^1.0.0',
+63 silly install resolved        lockfile: '^1.0.0',
+63 silly install resolved        'lru-cache': '^2.5.0',
+63 silly install resolved        mkdirp: '0.5.0',
+63 silly install resolved        mout: '^0.11.0',
+63 silly install resolved        nopt: '^3.0.1',
+63 silly install resolved        opn: '^1.0.1',
+63 silly install resolved        'p-throttler': '0.1.1',
+63 silly install resolved        promptly: '0.2.0',
+63 silly install resolved        q: '^1.1.2',
+63 silly install resolved        request: '2.53.0',
+63 silly install resolved        'request-progress': '0.3.1',
+63 silly install resolved        retry: '0.6.1',
+63 silly install resolved        rimraf: '^2.2.8',
+63 silly install resolved        semver: '^2.3.0',
+63 silly install resolved        'shell-quote': '^1.4.2',
+63 silly install resolved        'stringify-object': '^1.0.0',
+63 silly install resolved        'tar-fs': '^1.4.1',
+63 silly install resolved        tmp: '0.0.24',
+63 silly install resolved        'update-notifier': '^0.3.0',
+63 silly install resolved        'user-home': '^1.1.0',
+63 silly install resolved        which: '^1.0.8' },
+63 silly install resolved     devDependencies:
+63 silly install resolved      { chai: '^1.10.0',
+63 silly install resolved        coveralls: '^2.11.2',
+63 silly install resolved        'expect.js': '^0.3.1',
+63 silly install resolved        grunt: '^0.4.5',
+63 silly install resolved        'grunt-cli': '^0.1.13',
+63 silly install resolved        'grunt-contrib-jshint': '^0.10.0',
+63 silly install resolved        'grunt-contrib-watch': '^0.6.1',
+63 silly install resolved        'grunt-exec': '^0.4.6',
+63 silly install resolved        'grunt-simple-mocha': '^0.4.0',
+63 silly install resolved        istanbul: '^0.3.5',
+63 silly install resolved        'load-grunt-tasks': '^2.0.0',
+63 silly install resolved        mocha: '^2.1.0',
+63 silly install resolved        multiline: '^1.0.2',
+63 silly install resolved        nock: '^0.56.0',
+63 silly install resolved        'node-uuid': '^1.4.2',
+63 silly install resolved        proxyquire: '^1.3.0',
+63 silly install resolved        'spawn-sync': '^1.0.5' },
+63 silly install resolved     scripts: { test: 'grunt test' },
+63 silly install resolved     bin: { bower: 'bin/bower' },
+63 silly install resolved     files: [ 'bin', 'lib', 'templates' ],
+63 silly install resolved     gitHead: '64d990ba102c8491c474dd99605b9a9725e62cbb',
+63 silly install resolved     bugs: { url: 'https://github.com/bower/bower/issues' },
+63 silly install resolved     _id: 'bower@1.5.2',
+63 silly install resolved     _shasum: 'be291d6c36f1740779abff1c61aca5633e265327',
+63 silly install resolved     _from: 'bower@1.5.2',
+63 silly install resolved     _npmVersion: '2.11.3',
+63 silly install resolved     _nodeVersion: '0.12.7',
+63 silly install resolved     _npmUser: { name: 'sheerun', email: 'sheerun@sher.pl' },
+63 silly install resolved     dist:
+63 silly install resolved      { shasum: 'be291d6c36f1740779abff1c61aca5633e265327',
+63 silly install resolved        tarball: 'http://registry.npmjs.org/bower/-/bower-1.5.2.tgz' },
+63 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+63 silly install resolved     directories: {},
+63 silly install resolved     _resolved: 'https://registry.npmjs.org/bower/-/bower-1.5.2.tgz' } ]
+64 info install bower@1.5.2 into /Users/aleduarte06
+65 info installOne bower@1.5.2
+66 verbose installOne of bower to /Users/aleduarte06 not in flight; installing
+67 warn locking Error: EACCES, open '/Users/aleduarte06/.npm/_locks/bower-6ceac94d8ecc6147.lock'
+67 warn locking     at Error (native)
+67 warn locking  /Users/aleduarte06/.npm/_locks/bower-6ceac94d8ecc6147.lock failed { [Error: EACCES, open '/Users/aleduarte06/.npm/_locks/bower-6ceac94d8ecc6147.lock']
+67 warn locking   errno: -13,
+67 warn locking   code: 'EACCES',
+67 warn locking   path: '/Users/aleduarte06/.npm/_locks/bower-6ceac94d8ecc6147.lock' }
+68 verbose stack Error: Attempt to unlock /Users/aleduarte06/node_modules/bower, which hasn't been locked
+68 verbose stack     at unlock (/usr/local/lib/node_modules/npm/lib/utils/locker.js:66:11)
+68 verbose stack     at cb (/usr/local/lib/node_modules/npm/lib/install.js:1017:5)
+68 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:1021:20
+68 verbose stack     at /usr/local/lib/node_modules/npm/lib/utils/locker.js:40:9
+68 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/lockfile/lockfile.js:149:38)
+68 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/lockfile/lockfile.js:177:38
+68 verbose stack     at FSReqWrap.oncomplete (fs.js:95:15)
+69 verbose cwd /Users/aleduarte06/WebstormProjects/CoderHouse/clase07
+70 error Darwin 14.5.0
+71 error argv "node" "/usr/local/bin/npm" "update"
+72 error node v0.12.7
+73 error npm  v2.11.3
+74 error Attempt to unlock /Users/aleduarte06/node_modules/bower, which hasn't been locked
+75 error If you need help, you may report this error at:
+75 error     <https://github.com/npm/npm/issues>
+76 verbose exit [ 1, true ]
